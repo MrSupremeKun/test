@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: pink;
+}
+.header__nav{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.header__logo{
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+font-size: 50px;
+font-family: fantasy;
+}
+.header__list{
+    list-style: none;
+    display: flex;
+}
+.header__link{
+    font-family:cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+}
+.header__link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: 0.5s;
+}
+.header__link:hover{
+    color:yellow;
+}
+.header__link:hover::before{
+  width: 100%;
+}
